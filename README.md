@@ -1,15 +1,21 @@
-# electronic-project-template
-Template for new electronic project on LibrePCB and KiCad
+# About
+This project is a template for new electronic project.
 
-## How to use
-Use this template for your project
+It will create two empty workspaces and projects for KiCad and LibrePCB.
 
-Git clone the project to your computer
+## Linux commands
+After you create a new project using this template, go to the new project root folder and run the commands below
+```
+cd script/
+chmod +x rename.sh
+./rename.sh <name>
+cd ..
+rm -rf script/
+```
 
-Go to the script/ folder
+"name" is the name of your project.
 
-Make the rename.sh script executable
+This will rename all files and folders and remove the script/ folder that is not needed anymore
 
-Run "./rename.sh <name>" with the name of your project
-
-This will rename all files and folders
+## License
+GNU GPL v3
